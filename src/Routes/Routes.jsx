@@ -5,6 +5,11 @@ import Errorpage from '../errorpage/Errorpage';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import Register from '../Pages/Register/Register';
+import Dashboard from '../Layouts/Dashboard';
+import MyProfile from '../Pages/UserDashboard/MyProfile';
+import NewTask from '../Pages/UserDashboard/NewTask';
+import ToDo from '../Pages/UserDashboard/ToDo';
+import ManageTask from '../Pages/UserDashboard/ManageTask';
 
 const myCreatedRoutes  = createBrowserRouter([
     {
@@ -24,6 +29,35 @@ const myCreatedRoutes  = createBrowserRouter([
                 path: '/register',
                 element: <Register></Register>
             }
+        ]
+    },
+    {
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: 'myprofile',
+                element: <MyProfile></MyProfile>
+            },
+            {
+                path: 'newtask',
+                element: <NewTask></NewTask>
+            },
+            {
+                path: 'todo',
+                element: <ToDo></ToDo>,
+
+            },
+            {
+                path: 'managetask',
+                element: <ManageTask></ManageTask>,
+
+            },
+
+         
+
+
+
         ]
     }
 ])

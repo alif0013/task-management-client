@@ -25,7 +25,7 @@ const Navbar = () => {
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
         } >Home</NavLink></li>
 
-        <li><NavLink to='/dashboard' className={({ isActive, isPending }) =>
+        <li><NavLink to='/dashboard/myprofile' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
         }>Dashboard</NavLink></li>
 
