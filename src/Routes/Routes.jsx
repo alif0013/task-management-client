@@ -10,6 +10,7 @@ import MyProfile from '../Pages/UserDashboard/MyProfile';
 import NewTask from '../Pages/UserDashboard/NewTask';
 import ToDo from '../Pages/UserDashboard/ToDo';
 import ManageTask from '../Pages/UserDashboard/ManageTask';
+import UpdateTask from '../Pages/UserDashboard/UpdateTask';
 
 const myCreatedRoutes  = createBrowserRouter([
     {
@@ -28,7 +29,8 @@ const myCreatedRoutes  = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            }
+            },
+          
         ]
     },
     {
@@ -53,10 +55,11 @@ const myCreatedRoutes  = createBrowserRouter([
                 element: <ManageTask></ManageTask>,
 
             },
+            {
+                path: 'update-task/:id',
+                element: <UpdateTask></UpdateTask>,
 
-         
-
-
+            },
 
         ]
     }

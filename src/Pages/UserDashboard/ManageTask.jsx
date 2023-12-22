@@ -76,7 +76,7 @@ const ManageTask = () => {
                                         
                                         <td>{todo.title}</td>
                                         <td>{todo.deadline}</td>
-                                        <td> <Link to={`/update-task`} className="btn btn-sm"><CiEdit></CiEdit></Link> </td>
+                                        <td> <Link to={`/dashboard/update-task/${todo._id}`} className="btn btn-sm"><CiEdit></CiEdit></Link> </td>
                                         <td> <button onClick={() => handleDelete(todo._id)} className="btn text-xl text-red-600"><MdOutlineDelete></MdOutlineDelete></button> </td>
 
                                     </tr>
