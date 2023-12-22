@@ -11,6 +11,7 @@ import NewTask from '../Pages/UserDashboard/NewTask';
 import ToDo from '../Pages/UserDashboard/ToDo';
 import ManageTask from '../Pages/UserDashboard/ManageTask';
 import UpdateTask from '../Pages/UserDashboard/UpdateTask';
+import PrivateRoute from './PrivateRoute';
 
 const myCreatedRoutes  = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ const myCreatedRoutes  = createBrowserRouter([
     },
     {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute> ,
         children: [
             {
                 path: 'myprofile',
