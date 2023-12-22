@@ -28,6 +28,12 @@ const Navbar = () => {
         <li><NavLink to='/dashboard/myprofile' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
         }>Dashboard</NavLink></li>
+        <li><NavLink to='/membership' className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
+        }>Membership</NavLink></li>
+        <li><NavLink to='/contact' className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
+        }>Contact</NavLink></li>
 
 
 

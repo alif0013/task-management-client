@@ -12,6 +12,8 @@ import ToDo from '../Pages/UserDashboard/ToDo';
 import ManageTask from '../Pages/UserDashboard/ManageTask';
 import UpdateTask from '../Pages/UserDashboard/UpdateTask';
 import PrivateRoute from './PrivateRoute';
+import Membership from '../Pages/Home/Membership/Membership';
+import About from '../Pages/Home/About/About';
 
 const myCreatedRoutes  = createBrowserRouter([
     {
@@ -22,6 +24,14 @@ const myCreatedRoutes  = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/membership',
+                element: <Membership></Membership>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             },
             {
                 path: '/login',
