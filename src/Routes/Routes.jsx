@@ -13,7 +13,7 @@ import ManageTask from '../Pages/UserDashboard/ManageTask';
 import UpdateTask from '../Pages/UserDashboard/UpdateTask';
 import PrivateRoute from './PrivateRoute';
 import Membership from '../Pages/Home/Membership/Membership';
-import About from '../Pages/Home/About/About';
+import Contact from '../Pages/Home/Contact/Contact';
 
 const myCreatedRoutes  = createBrowserRouter([
     {
@@ -30,8 +30,8 @@ const myCreatedRoutes  = createBrowserRouter([
                 element: <Membership></Membership>
             },
             {
-                path: '/about',
-                element: <About></About>
+                path: '/contact',
+                element: <Contact></Contact>
             },
             {
                 path: '/login',
